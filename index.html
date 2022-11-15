@@ -40,14 +40,15 @@
         }
 
         .btn-a {
-            padding: 10px 30px;
-            width: 100% !important;
+            padding: 0.8rem 5rem;
             background-color: #090979;
             color: white !important;
             border: none;
             margin: auto !important;
             text-decoration: none;
             border-radius: 10px;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
         }
 
         .section-header {
@@ -64,7 +65,11 @@
         .footer {
             text-align: center;
             color: white;
-            padding: 0.5rem 0rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        p{
+            color: black !important;
         }
     </style>
 </head>
@@ -73,19 +78,19 @@
     <div class="container">
         <div class="child">
             <table cellspading='0' cellpading='0' border='0' class='header' width='400px'
-                style='padding: 1rem 3rem; margin: auto;'>
+                style='padding: 1rem 3rem; border-top-left-radius: 10px !important; border-top-right-radius: 10px !important;'>
                 <tr>
                     <td width='90px'>
                         <img src="https://raw.githubusercontent.com/imkzuma/invasiudayana/main/src/img/invasi-low.png"
                             width="100%" class='ps-4 m-0 p-0 my-auto'>
                     </td>
                     <td width='210px' style='padding-left: 1.5rem;'>
-                        <h3>Invasi Udayana</h3>
-                        <small>Webinar dan Talkshow E-Tiket</small>
+                        <h2>Invasi Udayana</h2>
+                        <small>Webinar dan Talkshow</small>
                     </td>
                 </tr>
             </table>
-            <table class='section' cellspading='0' cellpading='0' border='0' style='margin: auto; padding: 2rem 1.5rem;'
+            <table class='section' cellspading='0' cellpading='0' border='0' style='padding: 2rem 1.5rem;'
                 width='400px'>
                 <tr>
                     <td>
@@ -115,7 +120,7 @@
                             Contoh: <b>0012_Gung Krisna</b>
                         </p>
                         <div style="padding-top: 2rem; text-align: center; width: 100%">
-                            <small>
+                            <small style = 'color: black !important;'>
                                 <b>
                                     Terdapat kendala? Hubungi Contact Person ini:
                                 </b>
@@ -130,12 +135,10 @@
                     </td>
                 </tr>
             </table>
-            <table cellspading='0' cellpading='0' border='0' style="margin:auto" width='400px'>
+            <table cellspading='0' class = 'footer' cellpading='0' border='0' width='400px' style = 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'>
                 <tr>
-                    <td>
-                        <footer class='footer'>
-                            <small>&copy; Invasi Udayana 2022</small>
-                        </footer>
+                    <td align="center" width = '400px'>
+                        <small>&copy; Invasi Udayana 2022</small>
                     </td>
                 </tr>
             </table>

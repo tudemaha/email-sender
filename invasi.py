@@ -33,6 +33,11 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
 
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+                @media (prefers-color-scheme: dark){
+                    .section p , .section small{
+                        color: black !important;
+                    }
+                }
 
                 * {
                     font-family: 'Roboto', sans-serif;
@@ -58,7 +63,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                 }
 
                 .section {
-                    background: url("https://d33wubrfki0l68.cloudfront.net/static/media/fb1f349208f1d6f59c9a196fdb5dc23cabe80b4e/bg-web.4e83223833905a64c54b.jpg");
+                    /*background: url("https://d33wubrfki0l68.cloudfront.net/static/media/fb1f349208f1d6f59c9a196fdb5dc23cabe80b4e/bg-web.4e83223833905a64c54b.jpg");*/
                     text-align: justify;
                     line-height: 1.5rem;
                 }
@@ -102,7 +107,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             <div class="container">
                 <div class="child">
                     <table cellspading='0' cellpading='0' border='0' class='header' width='400px'
-                        style='padding: 1rem 3rem; border-top-left-radius: 10px !important; border-top-right-radius: 10px !important;'>
+                        style='padding: 1rem 3rem; border-left: 2px solid #090979; border-right: 2px solid #090979; border-top-left-radius: 10px !important; border-top-right-radius: 10px !important;'>
                         <tr>
                             <td width='90px'>
                                 <img src="https://raw.githubusercontent.com/tudemaha/email-sender/main/img/invasi-very-low.png"
@@ -114,7 +119,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                             </td>
                         </tr>
                     </table>
-                    <table class='section' cellspading='0' cellpading='0' border='0' style='padding: 2rem 1.5rem;'
+                    <table class='section' cellspading='0' cellpading='0' border='0' style='padding: 2rem 1.5rem; border-left: 2px solid #090979; border-right: 2px solid #090979;'
                         width='400px'>
                         <tr>
                             <td align="end">
@@ -162,7 +167,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                             </td>
                         </tr>
                     </table>
-                    <table cellspading='0' class = 'footer' cellpading='0' border='0' width='400px' style = 'border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'>
+                    <table cellspading='0' class = 'footer' cellpading='0' border='0' width='400px' style = 'border-left: 2px solid #090979; border-right: 2px solid #090979; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;'>
                         <tr>
                             <td align="center" width = '400px'>
                                 <small>&copy; Invasi Udayana 2022</small>

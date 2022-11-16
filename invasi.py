@@ -6,11 +6,12 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-receivers = pd.read_excel('receivers.xlsx', usecols="A, C")
+receivers = pd.read_excel('receivers.xlsx', usecols="A, B, C")
+
+sender_email = "mahardikagede0@gmail.com"
+password = "aezoyxkcfzqpagne"
 
 subject = "Webinar Nasional & Talkshow Invasi Udayana 2022"
-sender_email = ""
-password = ""
 
 context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
@@ -116,36 +117,39 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                     <table class='section' cellspading='0' cellpading='0' border='0' style='padding: 2rem 1.5rem;'
                         width='400px'>
                         <tr>
-                            <td>
-                                <p>Kepada,</p>
-
-                            </td>
                             <td align="end">
                                 <small>20 November 2022</small>
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <p>Yth.</p>
+
+                            </td>
+                        </tr>
+                        <tr>
                             <td colspan="2">
-                                <smal>Pembeli yang terhormat</smal>
+                                <smal>Peserta Webinar dan Talkshow Invasi Udayana 2022</smal>
                                 <p style='padding-top: 1rem;'>
-                                    Terima kasih telah melakukan pendaftaran pada Webinar dan Talkshow Invasi Udayana.
-                                    Berikut adalah Data anda:
+                                    Terima kasih telah melakukan pendaftaran pada Webinar dan Talkshow Invasi Udayana 2022.
+                                    Berikut adalah data Anda:
                                 </p>
                                 <p style="padding-top: 1rem;">
-                                    Nomor tiket anda: <b>00018</b>
+                                    Nomor tiket: """ + f""" <b>{receivers['nomor'][i]}</b>
                                 </p>
                                 <p>
-                                    Silakan bergabung grup berikut: <br /><a href="https://t.me/+gAc1mWuhdDc2ZDFl">Grup
-                                        Webinar dan Talkshow Invasi Udayana</a>
+                                    Silakan bergabung grup berikut: <br/>
+                                    <a href="https://t.me/+gAc1mWuhdDc2ZDFl">Grup Webinar dan Talkshow Invasi Udayana 2022</a><br>
+                                    (<a href="https://t.me/+gAc1mWuhdDc2ZDFl">https://t.me/+gAc1mWuhdDc2ZDFl</a>)
                                 </p>
                                 <p style="padding-top: 1rem;">
-                                    dengan Format berikut : <b>NoTiket_Nama</b> <br />
+                                    dengan format: <b>NoTiket_Nama</b> <br />
                                     Contoh: <b>0012_Gung Krisna</b>
                                 </p>
                                 <div style="padding-top: 2rem; text-align: center; width: 100%">
                                     <small style = 'color: black !important;'>
                                         <b>
-                                            Terdapat kendala? Hubungi Contact Person ini:
+                                            Terdapat kendala? Silakan hubungi contact person berikut.
                                         </b>
                                     </small>
 

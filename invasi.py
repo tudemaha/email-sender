@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 
 receivers = pd.read_excel('receivers.xlsx', usecols="A, B, C")
 
-sender_email = ""
-password = ""
+sender_email = "mahardikagede0@gmail.com"
+password = "aezoyxkcfzqpagne"
 
 subject = "Webinar Nasional & Talkshow Invasi Udayana 2022"
 
@@ -197,4 +197,4 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
 
         server.sendmail(sender_email, receivers['email'][i], text)
 
-        print(f"{receivers['email'][i]} send successfully")
+        print(f"{receivers['nomor'][i]} - {receivers['email'][i]} send successfully")

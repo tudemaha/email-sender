@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 
 receivers = pd.read_excel('receivers.xlsx', usecols="A, B, C")
 
-sender_email = "mahardikagede0@gmail.com"
-password = "aezoyxkcfzqpagne"
+sender_email = ""
+password = ""
 
 subject = "Webinar Nasional & Talkshow Invasi Udayana 2022"
 
